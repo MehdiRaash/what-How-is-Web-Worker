@@ -2,4 +2,4 @@
 
 ## preface
 
-JavaScript is single threaded which the host environment provide and manage that thread.
+JavaScript is single threaded which the host environment(for example a browser) provide and manage that thread.
