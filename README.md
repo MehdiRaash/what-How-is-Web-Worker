@@ -19,7 +19,7 @@ Hence, they can perform I/O using XMLHttpRequest (although the responseXML and c
 
 ### Important notes 
 
-- **Web Worker** is a feature of the browser (also known as: host environment) and actually has almost nothing to do with the JavaScript language itself. That is, JavaScript does not *currently* have any features that support threaded execution.
+- Web Worker is a feature of the browser (also known as: host environment) and actually has almost nothing to do with the JavaScript language itself. That is, JavaScript does not *currently* have any features that support threaded execution.
 
 - Workers may, in turn, **spawn new workers**, as long as those workers are hosted within the same origin as the parent page.
 
