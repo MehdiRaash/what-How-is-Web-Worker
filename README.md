@@ -17,7 +17,9 @@ A worker is an object created using a constructor (e.g. Worker()) that runs a na
 
 Hence, they can perform I/O using XMLHttpRequest (although the responseXML and channel attributes are always null). Once created, a worker can send messages to the JavaScript code that created it by posting messages to an event handler specified by that code (and vice versa.)
 
-### Some important notes 
+### Important notes 
 
-- **Web Workers** is a feature of the browser (also known as: host environment) and actually has almost nothing to do with the JS language itself. That is, JavaScript does not currently have any features that support threaded execution.
+- **Web Worker** is a feature of the browser (also known as: host environment) and actually has almost nothing to do with the JavaScript language itself. That is, JavaScript does not *currently* have any features that support threaded execution.
+
+-
 
