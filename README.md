@@ -21,5 +21,8 @@ Hence, they can perform I/O using XMLHttpRequest (although the responseXML and c
 
 - **Web Worker** is a feature of the browser (also known as: host environment) and actually has almost nothing to do with the JavaScript language itself. That is, JavaScript does not *currently* have any features that support threaded execution.
 
--
+- Workers may, in turn, **spawn new workers**, as long as those workers are hosted within the same origin as the parent page.
 
+- You can run whatever code you like inside the worker thread, with some exceptions. For example, you can't directly manipulate the DOM from inside a worker, or use some default methods and properties of the window object. But you can use a large number of items available under window, including WebSockets, and data storage mechanisms like IndexedDB and the Firefox OS-only Data Store API.
+
+- Data is sent between workers and the main thread via a system of messages — both sides send their messages using the postMessage() method, and respond to messages via the onmessage event handler (the message is contained within the Message event's data attribute.) The data is copied rather than shared.
