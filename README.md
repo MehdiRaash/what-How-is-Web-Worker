@@ -8,7 +8,7 @@ If you have processing-intensive tasks but you don't want them to run on the mai
 
 "Web worker" is an option to not just stand on the main thread, so it's all about performance every where in computing devices, also in web browsers.
 
-## What is Web Worker and what it brings?
+## What is Web Worker and what it brings up?
 
 Web Workers is a simple means for web content to run scripts in background threads,( another thread ).
 Let's call that thread **the worker thread** , the worker thread can perform tasks without interfering with the user interface tasks which runs on main thread.
@@ -25,4 +25,6 @@ Hence, they can perform I/O using XMLHttpRequest (although the responseXML and c
 
 - You can run whatever code you like inside the worker thread, with some exceptions. For example, you can't directly manipulate the DOM from inside a worker, or use some default methods and properties of the window object. But you can use a large number of items available under window, including WebSockets, and data storage mechanisms like IndexedDB and the Firefox OS-only Data Store API.
 
-- Data is sent between workers and the main thread via a system of messages — both sides send their messages using the postMessage() method, and respond to messages via the onmessage event handler (the message is contained within the Message event's data attribute.) The data is copied rather than shared.
+- Data is sent between workers and the main thread via a system of messages — both sides send their messages using the `postMessage()` method, and respond to messages via the onmessage event handler (the message is contained within the Message event's data attribute.) The data is copied rather than shared.
+
+### Dedicated workers
