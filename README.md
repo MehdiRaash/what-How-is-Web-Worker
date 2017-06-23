@@ -28,3 +28,5 @@ Hence, they can perform I/O using XMLHttpRequest (although the responseXML and c
 - Data is sent between workers and the main thread via a system of messages — both sides send their messages using the `postMessage()` method, and respond to messages via the onmessage event handler (the message is contained within the Message event's data attribute.) The data is copied rather than shared.
 
 ### Dedicated workers
+
+A dedicated worker is only accessible by the script that called it. 
