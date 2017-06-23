@@ -30,3 +30,7 @@ Hence, they can perform I/O using XMLHttpRequest (although the responseXML and c
 ### Dedicated workers
 
 A dedicated worker is only accessible by the script that called it. 
+
+### Shared Workers
+
+A shared worker is accessible by multiple scripts, even if they are being accessed by different windows, iframes or even workers.
