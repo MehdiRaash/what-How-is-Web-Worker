@@ -1,4 +1,4 @@
-# What&How is Web Worker
+# What and How is Web Worker
 
 ## preface
 
